@@ -38,7 +38,7 @@ export default function HeroSection() {
 {/*           <div className="flex items-start justify-between gap-8"> */}
           <div className="flex flex-col md:flex-row items-start justify-between gap-8">
             <div className="space-y-4">
-              <span className="inline-block px-3 py-1 text-sm text-red-400 bg-red-950/50 rounded-full font-medium">Stay Tuned</span>
+              <span className="inline-block px-3 py-1 text-sm text-red-400 bg-red-950/50 rounded-full font-medium border border-red-600">Stay Tuned</span>
               <h2 className="text-3xl sm:text-4xl font-bold">
                 <span className="text-white">Zero2Advance</span> <span className="text-red-500">Python</span>{" "}
                 <span className="text-white">is Coming</span>
@@ -54,7 +54,7 @@ export default function HeroSection() {
             </div>
 {/*             <div className="hidden lg:block"> */}
             <div>
-              <div className="w-40 h-40 bg-red-950/30 rounded-lg border border-red-900/20 flex items-center justify-center p-4">
+{/*               <div className="w-40 h-40 bg-red-950/30 rounded-lg border border-red-900/20 flex items-center justify-center p-4">
                 <Image
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/herologo-BZxigAVdE7xCTgwWG022jTBVPTAJmI.png"
                   alt="Z2A Logo"
@@ -62,7 +62,19 @@ export default function HeroSection() {
                   height={200}
                   className="w-full h-auto"
                 />
-              </div>
+              </div> */}
+
+              <div className="w-40 h-40 sm:w-full sm:max-w-xs sm:mx-auto aspect-square bg-red-950/30 rounded-lg border border-red-900/20 flex items-center justify-center p-4">
+  <Image
+    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/herologo-BZxigAVdE7xCTgwWG022jTBVPTAJmI.png"
+    alt="Z2A Logo"
+    width={200}
+    height={200}
+    className="w-full h-auto"
+  />
+</div>
+
+              
             </div>
           </div>
         </div>
