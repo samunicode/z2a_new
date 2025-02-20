@@ -81,19 +81,35 @@ export default function Footer() {
           <div className="space-y-4">
             <h3 className="text-sm font-medium">Connect</h3>
             <div className="flex space-x-4">
-              <Link href="#" className="text-muted-foreground transition-colors hover:text-primary">
+              <Link href="#" className="text-muted-foreground transition-colors hover:text-primary"
+                onClick={(e) => {e.preventDefault(); // Prevent default link behavior
+                    setIsOpen(true); // Open modal
+                    }}
+                >
                 <Github className="h-5 w-5" />
                 <span className="sr-only">GitHub</span>
               </Link>
-              <Link href="#" className="text-muted-foreground transition-colors hover:text-primary">
+              <Link href="#" className="text-muted-foreground transition-colors hover:text-primary"
+                onClick={(e) => {e.preventDefault(); // Prevent default link behavior
+                    setIsOpen(true); // Open modal
+                    }}
+                >
                 <Twitter className="h-5 w-5" />
                 <span className="sr-only">Twitter</span>
               </Link>
-              <Link href="#" className="text-muted-foreground transition-colors hover:text-primary">
+              <Link href="#" className="text-muted-foreground transition-colors hover:text-primary"
+                onClick={(e) => {e.preventDefault(); // Prevent default link behavior
+                    setIsOpen(true); // Open modal
+                    }}
+                >
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
-              <Link href="#" className="text-muted-foreground transition-colors hover:text-primary">
+              <Link href="#" className="text-muted-foreground transition-colors hover:text-primary"
+                onClick={(e) => {e.preventDefault(); // Prevent default link behavior
+                    setIsOpen(true); // Open modal
+                    }}
+                >
                 <Mail className="h-5 w-5" />
                 <span className="sr-only">Email</span>
               </Link>
