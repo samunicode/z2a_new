@@ -1,5 +1,6 @@
 "use client"
 
+import { useState } from "react"  // 🛠️ Yeh import karna zaroori hai!
 import { Button } from "@/components/ui/button"
 import { Bell, Play } from "lucide-react"
 import { motion } from "framer-motion"
@@ -15,6 +16,9 @@ const features = [
   { title: "Tutorials", link: "#" },
   { title: "Dev Challenges", link: "#" },
 ]
+
+export default function HeroSection() {
+  const [isOpen, setIsOpen] = useState(false)  // ✅ State for modal
 
 export default function HeroSection() {
   return (
