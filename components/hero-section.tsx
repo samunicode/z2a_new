@@ -91,7 +91,7 @@ export default function HeroSection() {
 
         
         {/* Main Hero */}
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-[1.5fr,1fr] gap-12 sm:items-start justify-content-center sm:justify-content-start">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-[1.5fr,1fr] gap-12 sm:items-start">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
