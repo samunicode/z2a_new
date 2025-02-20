@@ -48,17 +48,17 @@ export default function HeroSection() {
                 advanced concepts.
               </p>
               <Button className="bg-red-600 hover:bg-red-700 text-white font-medium" onClick={() => setIsOpen(true)}>
-                <Bell className="mr-2 h-4 lg:w-4 w-full" />
+                <Bell className="mr-2 h-4 w-4" />
                 Notify Me
               </Button>
             </div>
             <div className="hidden lg:block">
-              <div className="w-40 h-40 bg-red-950/30 rounded-lg border border-red-900/20 flex items-center justify-center p-4">
+              <div className="w-44 h-44 bg-red-950/30 rounded-lg border border-red-900/20 flex items-center justify-center p-4">
                 <Image
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/herologo-BZxigAVdE7xCTgwWG022jTBVPTAJmI.png"
                   alt="Z2A Logo"
-                  width={200}
-                  height={200}
+                  width={250}
+                  height={250}
                   className="w-full h-auto"
                 />
               </div>
