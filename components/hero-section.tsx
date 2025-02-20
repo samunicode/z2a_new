@@ -52,7 +52,8 @@ export default function HeroSection() {
                 Notify Me
               </Button>
             </div>
-            <div className="hidden lg:block">
+{/*             <div className="hidden lg:block"> */}
+            <div>
               <div className="w-40 h-40 bg-red-950/30 rounded-lg border border-red-900/20 flex items-center justify-center p-4">
                 <Image
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/herologo-BZxigAVdE7xCTgwWG022jTBVPTAJmI.png"
