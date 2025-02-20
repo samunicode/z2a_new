@@ -9,7 +9,7 @@ export default function MobileNav() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <div className="lg:hidden">
+    <div className="lg:hidden bg-black !bg-opacity-100">
       <Button variant="ghost" size="icon" onClick={() => setIsOpen(!isOpen)} className="lg:hidden">
         {isOpen ? <X className="h-8 w-8" /> : <Menu className="h-8 w-8" />}
       </Button>
