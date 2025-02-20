@@ -63,6 +63,30 @@ export default function HeroSection() {
           </div>
         </div>
 
+
+
+        {/* ✅ Modal Code */}
+        {isOpen && (
+          <div
+            className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
+            onClick={() => setIsOpen(false)}
+          >
+            <div
+              className="bg-white p-6 rounded-lg shadow-lg relative"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <span
+                className="absolute top-2 right-2 cursor-pointer text-xl"
+                onClick={() => setIsOpen(false)}
+              >
+                ×
+              </span>
+              <h1 className="text-xl font-bold">Hello, I am a modal!</h1>
+            </div>
+          </div>
+        )}
+
+        
         {/* Main Hero */}
         <div className="max-w-7xl mx-auto grid lg:grid-cols-[1.5fr,1fr] gap-12 items-start">
           <motion.div
@@ -85,7 +109,7 @@ export default function HeroSection() {
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700 font-medium text-white">
                 View Courses
               </Button>
-              <Button size="lg" variant="outline" className="gap-2 font-medium">
+              <Button size="lg" variant="outline" className="gap-2 font-medium" onClick={() => setIsOpen(true)}>
                 <Play className="h-4 w-4" /> Watch Preview
               </Button>
             </div>
