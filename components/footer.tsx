@@ -32,11 +32,11 @@ export default function Footer() {
 )}
       
       <div className="container flex flex-col gap-8 py-8 md:flex-row md:py-12">
-        <div className="flex-1 space-y-4">
+        <div className="flex-1 space-y-4 justify-center sm:justify-start">
           <h2 className="font-bold text-xl">Zero2Advance</h2>
           <p className="text-sm text-muted-foreground">Explore the journey from zero to advance in becoming a developer. Learn, build, and grow with hands-on experience and real-world projects. Start your coding journey today!</p>
         </div>
-        <div className="grid flex-1 grid-cols-2 gap-12 sm:grid-cols-3">
+        <div className="grid flex-1 grid-cols-2 gap-12 sm:grid-cols-3 justify-center sm:justify-start">
           <div className="space-y-4">
             <h3 className="text-sm font-medium">Courses</h3>
             <ul className="space-y-3 text-sm">
