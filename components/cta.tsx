@@ -17,10 +17,13 @@ export default function CTA() {
             placeholder="Enter your email"
             className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background"
           />
-          <Button className="bg-white text-black hover:bg-gray-200" onclick="window.location.href='mailto:yt.z2a.dev@gmail.com?subject=Hello&body=I want to subscribe to daily newsletter?'">
-            <Mail className="mr-2 h-4 w-4" />
-            Subscribe
-          </Button>
+          <a 
+      href="mailto:yt.z2a.dev@gmail.com?subject=Hello&body=I want to subscribe to the daily newsletter?"
+      className="bg-white text-black hover:bg-gray-200 flex items-center px-4 py-2 rounded"
+    >
+      <Mail className="mr-2 h-4 w-4" />
+      Subscribe
+    </a>
         </div>
       </div>
     </section>
