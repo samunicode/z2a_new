@@ -1,4 +1,4 @@
-import { Trophy, book, laptop, users} from "lucide-react"
+import { Trophy, Book, Laptop, Users} from "lucide-react"
 
 const features = [
   {
@@ -9,17 +9,17 @@ const features = [
   {
     name: "Curated for you",
     description: "Learners can tailor their learning experience to their individual needs and goals through personalized learning paths",
-    icon: book,
+    icon: Book,
   },
   {
     name: "Hands-On Practice",
     description: "Variety of hands-on practice exercises and challenges, providing valuable opportunity to apply theoretical knowledge.",
-    icon: laptop,
+    icon: Laptop,
   },
   {
     name: "Community",
     description: "Become part of a vibrant online community of fellow coders, engage in discussions, collaborate on projects, and recieve support",
-    icon: users,
+    icon: Users,
   },
 ]
 
