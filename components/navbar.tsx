@@ -17,7 +17,8 @@ export default function Navbar() {
     onClick={() => setIsOpen(false)}
   >
     <div
-      className="bg-black text-white p-6 rounded-lg shadow-lg relative w-96 border border-red-600 flex flex-col items-center justify-center"
+      className="bg-black text-white p-6 rounded-lg shadow-lg relative w-96 border border-red-600 
+                 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
       onClick={(e) => e.stopPropagation()}
     >
       <span
@@ -30,6 +31,7 @@ export default function Navbar() {
     </div>
   </div>
 )}
+
 
       
       <div className="container flex h-16 items-center justify-between px-4">
