@@ -16,6 +16,46 @@ const features = [
   { title: "Dev Challenges", link: "#" },
 ]
 
+export default function Page() {
+  return (
+    <div>
+      <button className="popup-btn">Click Me</button>
+
+      {/* Popup Div (Hidden by Default) */}
+      <div id="popup" style={{
+        position: "fixed", 
+        top: "10%", 
+        left: "50%", 
+        transform: "translate(-50%, 0)", 
+        background: "black", 
+        color: "white", 
+        padding: "10px 20px", 
+        borderRadius: "5px", 
+        display: "none"
+      }}>
+        Coming Soon
+      </div>
+
+      {/* JavaScript Code */}
+      <script dangerouslySetInnerHTML={{ __html: `
+        function showPopup() {
+          var popup = document.getElementById("popup");
+          popup.style.display = "block";
+          setTimeout(function() {
+            popup.style.display = "none";
+          }, 2000);
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+          document.querySelectorAll(".popup-btn").forEach(function(button) {
+            button.addEventListener("click", showPopup);
+          });
+        });
+      `}} />
+    </div>
+  );
+}
+
+
 export default function HeroSection() {
   return (
     <div className="relative min-h-screen bg-black">
@@ -85,7 +125,7 @@ export default function HeroSection() {
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700 font-medium text-white">
                 View Courses
               </Button>
-              <Button size="lg" variant="outline" className="gap-2 font-medium">
+              <Button size="lg" variant="outline" className="gap-2 font-medium popup-btn">
                 <Play className="h-4 w-4" /> Watch Preview
               </Button>
             </div>
