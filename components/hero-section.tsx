@@ -38,7 +38,7 @@ export default function HeroSection() {
 {/*           <div className="flex items-start justify-between gap-8"> */}
           <div className="flex flex-col md:flex-row items-start justify-between gap-8">
             <div className="space-y-4">
-              <span className="inline-block px-3 py-1 text-sm text-red-400 bg-red-950/50 rounded-full font-medium border border-red-600">Stay Tuned</span>
+              <span className="inline-block px-3 py-1 text-sm text-red-400 bg-red-950/50 rounded-full font-semibold border border-red-600">Stay Tuned</span>
               <h2 className="text-3xl sm:text-4xl font-bold">
                 <span className="text-white">Zero2Advance</span> <span className="text-red-500">Python</span>{" "}
                 <span className="text-white">is Coming</span>
@@ -47,7 +47,7 @@ export default function HeroSection() {
                 Get ready for our most comprehensive Python learning experience yet. Master Python from basics to
                 advanced concepts.
               </p>
-              <Button className="bg-red-600 hover:bg-red-700 text-white font-medium" onClick={() => setIsOpen(true)}>
+              <Button className="bg-red-600 hover:bg-red-700 text-white font-semibold" onClick={() => setIsOpen(true)}>
                 <Bell className="mr-2 h-4 w-4" />
                 Notify Me
               </Button>
@@ -104,15 +104,15 @@ export default function HeroSection() {
                 Zero to Advance
               </span>
             </h1>
-            <p className="text-gray-400 text-base sm:text-lg max-w-xl">
+            <p className="text-gray-400 text-base sm:text-lg max-w-xl font-semibold">
               Elevate your programming skills, solve real-world challenges, and unlock endless possibilities with our
               comprehensive courses.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 font-medium text-white" onClick={() => setIsOpen(true)}>
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 font-semibold text-white" onClick={() => setIsOpen(true)}>
                 View Courses
               </Button>
-              <Button size="lg" variant="outline" className="gap-2 font-medium" onClick={() => setIsOpen(true)}>
+              <Button size="lg" variant="outline" className="gap-2 font-semibold" onClick={() => setIsOpen(true)}>
                 <Play className="h-4 w-4" /> Watch Preview
               </Button>
             </div>
@@ -152,7 +152,7 @@ export default function HeroSection() {
                 transition={{ duration: 0.3, delay: 0.1 * index }}
                 className="p-4 rounded-lg border border-gray-800 bg-gray-900/50 hover:bg-gray-800/50 transition-colors group"
               >
-                <h3 className="font-medium text-gray-200 group-hover:text-white transition-colors">{feature.title}</h3>
+                <h3 className="font-semibold text-gray-200 group-hover:text-white transition-colors">{feature.title}</h3>
               </motion.a>
             ))}
           </motion.div>
