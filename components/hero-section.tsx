@@ -43,7 +43,7 @@ export default function HeroSection() {
                 <span className="text-white">Zero2Advance</span> <span className="text-red-500">Python</span>{" "}
                 <span className="text-white">is Coming</span>
               </h2>
-              <p className="text-gray-400 max-w-2xl text-sm sm:text-base">
+              <p className="text-gray-400 max-w-2xl text-sm sm:text-base font-semibold">
                 Get ready for our most comprehensive Python learning experience yet. Master Python from basics to
                 advanced concepts.
               </p>
@@ -152,7 +152,7 @@ export default function HeroSection() {
                 transition={{ duration: 0.3, delay: 0.1 * index }}
                 className="p-4 rounded-lg border border-gray-800 bg-gray-900/50 hover:bg-gray-800/50 transition-colors group"
               >
-                <h3 className="font-semibold text-gray-200 group-hover:text-white transition-colors lg:justify-content">{feature.title}</h3>
+                <h3 className="font-semibold text-gray-200 group-hover:text-white transition-colors">{feature.title}</h3>
               </motion.a>
             ))}
           </motion.div>
