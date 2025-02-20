@@ -15,7 +15,7 @@ export default function MobileNav() {
       </Button>
 
       {isOpen && (
-        <div className="fixed inset-0 top-[64px] z-50 bg-black">
+        <div className="fixed inset-0 top-[64px] z-50 bg-black !bg-opacity-100">
           <nav className="container px-4 py-6 flex flex-col space-y-4">
             <Link href="#courses" className="text-lg font-medium hover:text-primary" onClick={() => setIsOpen(false)}>
               Courses (Launching Soon!)
