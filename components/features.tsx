@@ -32,7 +32,7 @@ export default function Features() {
         Unveil the essence of z2a.dev: a community-driven platform dedicated to empowering coders of all levels. Discover who we are and how we're shaping the future of coding education.
         </p>
       </div>
-      <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-2">
+      <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-2 justify-center sm:justify-start">
         {features.map((feature) => (
           <div key={feature.name} className="relative overflow-hidden rounded-lg border bg-background p-8">
             <div className="flex items-center gap-4">
