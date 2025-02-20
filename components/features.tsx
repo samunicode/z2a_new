@@ -34,12 +34,12 @@ export default function Features() {
       </div>
       <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-2">
         {features.map((feature) => (
-          <div key={feature.name} className="relative overflow-hidden rounded-lg border bg-background p-8 justify-center sm:justify-start">
-            <div className="flex items-center gap-4">
+          <div key={feature.name} className="relative overflow-hidden rounded-lg border bg-background p-8">
+            <div className="flex flex-wrap justify-center sm:justify-start gap-4">
               <feature.icon className="h-8 w-8" />
               <h3 className="font-bold">{feature.name}</h3>
             </div>
-            <p className="mt-2 text-muted-foreground">{feature.description}</p>
+            <p className="mt-2 text-muted-foreground sm:text-left text-center">{feature.description}</p>
           </div>
         ))}
       </div>
