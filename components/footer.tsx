@@ -5,9 +5,11 @@ import Link from "next/link"
 import { Github, Twitter, Linkedin, Mail } from "lucide-react"
 
 export default function Footer() {
-  return (
+  const [isOpen, setIsOpen] = useState(false) 
+  return (    
+    <footer className="border-t bg-gray-950">
 
-
+    
      {/* ✅ Improved Modal Code */}
 {isOpen && (
   <div
@@ -28,9 +30,7 @@ export default function Footer() {
     </div>
   </div>
 )}
-
-    
-    <footer className="border-t bg-gray-950">
+      
       <div className="container flex flex-col gap-8 py-8 md:flex-row md:py-12">
         <div className="flex-1 space-y-4">
           <h2 className="font-bold text-xl">Zero2Advance</h2>
