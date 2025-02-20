@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Z2A.dev - From Zero to Advance | Python Courses",
   description:
     "Master Python programming with our comprehensive courses. From foundations to advanced concepts like DSA and OOP.",
-    generator: 'v0.dev'
+    generator: 'z2a.dev'
 }
 
 export default function RootLayout({
