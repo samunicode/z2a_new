@@ -19,8 +19,6 @@ const features = [
 
 export default function HeroSection() {
   const [isOpen, setIsOpen] = useState(false)  // ✅ State for modal
-
-export default function HeroSection() {
   return (
     <div className="relative min-h-screen bg-black">
       {/* Grid Background */}
