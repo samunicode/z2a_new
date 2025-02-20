@@ -53,12 +53,20 @@ export default function HeroSection() {
             </div>
             <div className="hidden lg:block">
               <div className="w-44 h-44 bg-red-950/40 rounded-lg border border-red-900/20 flex items-center justify-center p-4">
+                <style>
+  @keyframes slowFloat {
+    0%, 100% { transform: translateY(5px); }
+    50% { transform: translateY(-5px); }
+  }
+</style>
+
                 <Image
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/herologo-BZxigAVdE7xCTgwWG022jTBVPTAJmI.png"
                   alt="Z2A Logo"
                   width={250}
                   height={250}
                   className="w-full h-auto"
+                  style="animation: slowFloat 5s ease-in-out infinite;"
                 />
               </div>
             </div>
