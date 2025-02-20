@@ -59,7 +59,7 @@ export default function HeroSection() {
                   alt="Z2A Logo"
                   width={250}
                   height={250}
-                  className="w-full h-auto animate-slowFloat"
+                  className="w-full h-auto animate-bounce duration-3000 ease-in-out"
                 />
               </div>
             </div>
