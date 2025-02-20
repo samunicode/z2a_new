@@ -34,9 +34,8 @@ export default function HeroSection() {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 pt-32">
         {/* Announcement Banner */}
-        <div className="max-w-4xl mx-auto mb-16 p-6 rounded-lg bg-gradient-to-r from-red-950/50 to-transparent border border-red-900/20">
-{/*           <div className="flex items-start justify-between gap-8"> */}
-          <div className="flex flex-col md:flex-row items-start justify-between gap-8">
+        <div className="max-w-4xl mx-auto mb-16 p-6 rounded-lg bg-gradient-to-r from-red-950/80 to-red-950/40 border border-red-900/90">
+          <div className="flex items-start justify-between gap-8">
             <div className="space-y-4">
               <span className="inline-block px-3 py-1 text-sm text-red-400 bg-red-950/50 rounded-full font-semibold border border-red-600">Stay Tuned</span>
               <h2 className="text-3xl sm:text-4xl font-bold">
