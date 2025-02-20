@@ -36,7 +36,7 @@ export default function Navbar() {
           </nav>
         </div>
         <div className="flex items-center gap-4">
-          <Button className="hidden lg:inline-flex text-white font-medium">Python DSA Roadmap</Button>
+          <Button className="hidden bg-red-600 lg:inline-flex text-white font-medium">Python DSA Roadmap</Button>
           <MobileNav />
         </div>
       </div>
