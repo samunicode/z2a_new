@@ -11,14 +11,14 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
 
-       {isOpen && (
+      {isOpen && (
   <div
     className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
     onClick={() => setIsOpen(false)}
   >
     <div
-      className="bg-black text-white p-6 rounded-lg shadow-lg relative w-96 border border-red-600 
-                 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+      className="bg-black text-white p-6 rounded-lg shadow-lg border border-red-600 
+                 w-96 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
       onClick={(e) => e.stopPropagation()}
     >
       <span
@@ -31,6 +31,7 @@ export default function Navbar() {
     </div>
   </div>
 )}
+
 
 
       
