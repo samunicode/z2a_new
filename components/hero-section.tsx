@@ -34,7 +34,7 @@ export default function HeroSection() {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 pt-32">
         {/* Announcement Banner */}
-        <div className="max-w-4xl mx-auto mb-16 p-6 rounded-lg bg-gradient-to-r from-red-950/80 to-red-950/40 border border-red-900/90">
+        <div className="max-w-4xl mx-auto mb-16 p-6 rounded-lg bg-gradient-to-r from-red-950/80 to-red-950/10 border border-red-900/90">
           <div className="flex items-start justify-between gap-8">
             <div className="space-y-4">
               <span className="inline-block px-3 py-1 text-sm text-red-400 bg-red-950/50 rounded-full font-semibold border border-red-600">Stay Tuned</span>
@@ -52,7 +52,7 @@ export default function HeroSection() {
               </Button>
             </div>
             <div className="hidden lg:block">
-              <div className="w-44 h-44 bg-red-950/30 rounded-lg border border-red-900/20 flex items-center justify-center p-4">
+              <div className="w-44 h-44 bg-red-950/40 rounded-lg border border-red-900/20 flex items-center justify-center p-4">
                 <Image
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/herologo-BZxigAVdE7xCTgwWG022jTBVPTAJmI.png"
                   alt="Z2A Logo"
