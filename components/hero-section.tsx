@@ -152,7 +152,7 @@ export default function HeroSection() {
                 transition={{ duration: 0.3, delay: 0.1 * index }}
                 className="p-4 rounded-lg border border-gray-800 bg-gray-900/50 hover:bg-gray-800/50 transition-colors group"
               >
-                <h3 className="font-semibold text-gray-200 group-hover:text-white transition-colors">{feature.title}</h3>
+                <h3 className="font-semibold text-gray-200 group-hover:text-white transition-colors justify-items-center">{feature.title}</h3>
               </motion.a>
             ))}
           </motion.div>
