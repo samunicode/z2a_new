@@ -11,11 +11,11 @@ export default function MobileNav() {
   return (
     <div className="lg:hidden">
       <Button variant="ghost" size="icon" onClick={() => setIsOpen(!isOpen)} className="lg:hidden">
-        {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+        {isOpen ? <X className="h-8 w-8" /> : <Menu className="h-8 w-8" />}
       </Button>
 
       {isOpen && (
-        <div className="fixed inset-0 top-[64px] z-50 bg-background/95 backdrop-blur-sm">
+        <div className="fixed inset-0 top-[64px] z-50 backdrop-blur-sm">
           <nav className="container px-4 py-6 flex flex-col space-y-4">
             <Link href="#courses" className="text-lg font-medium hover:text-primary" onClick={() => setIsOpen(false)}>
               Courses
