@@ -34,37 +34,40 @@ export default function HeroSection() {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 pt-32">
         {/* Announcement Banner */}
-        <div className="max-w-4xl mx-auto mb-16 p-6 rounded-lg bg-gradient-to-r from-red-950/80 to-red-950/10 border border-red-900/90">
-          <div className="flex items-start justify-between gap-8">
-            <div className="space-y-4">
-              <span className="inline-block px-3 py-1 text-sm text-red-400 bg-red-950/50 rounded-full font-semibold border border-red-600">Stay Tuned</span>
-              <h2 className="text-3xl sm:text-4xl font-bold">
-                <span className="text-white">Zero2Advance</span> <span className="text-red-500">Python</span>{" "}
-                <span className="text-white">is Coming</span>
-              </h2>
-              <p className="text-gray-400 max-w-2xl text-sm sm:text-base font-semibold">
-                Get ready for our most comprehensive Python learning experience yet. Master Python from basics to
-                advanced concepts.
-              </p>
-              <Button className="bg-red-600 hover:bg-red-700 text-white font-semibold" onClick={() => setIsOpen(true)}>
-                <Bell className="mr-2 h-4 w-4" />
-                Notify Me
-              </Button>
-            </div>
-            <div className="hidden lg:block">
-              <div className="w-44 h-44 bg-red-950/40 rounded-lg border border-red-900/20 flex items-center justify-center p-4">
-                
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/herologo-BZxigAVdE7xCTgwWG022jTBVPTAJmI.png"
-                  alt="Z2A Logo"
-                  width={250}
-                  height={250}
-                  className="w-full h-auto duration-5000 ease-in-out"
-                />
-              </div>
-            </div>
-          </div>
+         <div className="max-w-4xl mx-auto mb-16 p-6 rounded-lg bg-gradient-to-r from-red-950/80 to-red-950/10 border border-red-900/90 text-center sm:text-left">
+    <div className="flex flex-col sm:flex-row items-center sm:items-start justify-between gap-8">
+      <div className="space-y-4">
+        <span className="inline-block px-3 py-1 text-sm text-red-400 bg-red-950/50 rounded-full font-semibold border border-red-600">
+          Stay Tuned
+        </span>
+        <h2 className="text-3xl sm:text-4xl font-bold">
+          <span className="text-white">Zero2Advance</span> <span className="text-red-500">Python</span>{" "}
+          <span className="text-white">is Coming</span>
+        </h2>
+        <p className="text-gray-400 max-w-2xl text-sm sm:text-base font-semibold">
+          Get ready for our most comprehensive Python learning experience yet. Master Python from basics to
+          advanced concepts.
+        </p>
+        <div className="flex flex-wrap justify-center sm:justify-start gap-4">
+          <Button className="bg-red-600 hover:bg-red-700 text-white font-semibold">
+            <Bell className="mr-2 h-4 w-4" />
+            Notify Me
+          </Button>
         </div>
+      </div>
+
+      {/* Image (Centered on Mobile, Right on PC) */}
+      <div className="w-44 h-44 bg-red-950/40 rounded-lg border border-red-900/20 flex items-center justify-center p-4 sm:ml-4">
+        <Image
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/herologo-BZxigAVdE7xCTgwWG022jTBVPTAJmI.png"
+          alt="Z2A Logo"
+          width={250}
+          height={250}
+          className="w-full h-auto"
+        />
+      </div>
+    </div>
+  </div>
 
 
 
@@ -90,74 +93,71 @@ export default function HeroSection() {
 )}
 
         
-        {/* Main Hero */}
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-[1.5fr,1fr] gap-12 sm:items-start">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="space-y-6"
-          >
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-              Master Python from{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
-                Zero to Advance
-              </span>
-            </h1>
-            <p className="text-gray-400 text-base sm:text-lg max-w-xl font-semibold">
-              Elevate your programming skills, solve real-world challenges, and unlock endless possibilities with our
-              comprehensive courses.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 font-semibold text-white" onClick={() => setIsOpen(true)}>
-                View Courses
-              </Button>
-              <Button size="lg" variant="outline" className="gap-2 font-semibold" onClick={() => setIsOpen(true)}>
-                <Play className="h-4 w-4" /> Watch Preview
-              </Button>
-            </div>
-            <div className="flex items-center gap-4">
-              <div className="flex -space-x-2">
-                <div className="w-8 h-8 rounded-full border-2 border-black bg-gray-800">
-                  <img className="w-8 h-8 rounded-full" src="https://media.licdn.com/dms/image/v2/D5635AQEomy39uUfI5g/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1736708982885?e=1740643200&amp;v=beta&amp;t=2ho-7RmqFZWViNB0dTz21VI382T_bknrgtEIl8ZstLs" alt="Profile"/>
-                </div>
-                <div className="w-8 h-8 rounded-full border-2 border-black bg-gray-800">
-                  <img className="w-8 h-8 rounded-full" src="https://i.ibb.co/v89PpP8/3.jpg" alt="Profile"/>
-                </div>
-                <div className="w-8 h-8 rounded-full border-2 border-black bg-gray-800">
-                  <img className="w-8 h-8 rounded-full" src="https://i.ibb.co/7J2W5bgk/2.jpg" alt="Profile"/>
-                </div>
-                <div className="w-8 h-8 rounded-full border-2 border-black bg-gray-800">
-                  <img className="w-8 h-8 rounded-full" src="https://i.ibb.co/SX41sMRj/1.jpg" alt="Profile"/>
-                </div>
-              </div>
-              <p className="text-gray-400 text-sm sm:text-base">
-                <span className="font-semibold text-white">1K +</span> Students Already Learning
-              </p>
-            </div>
-          </motion.div>
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[1.5fr,1fr] gap-12 sm:items-start text-center sm:text-left">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="space-y-6"
+    >
+      <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+        Master Python from{" "}
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
+          Zero to Advance
+        </span>
+      </h1>
+      <p className="text-gray-400 text-base sm:text-lg max-w-xl font-semibold">
+        Elevate your programming skills, solve real-world challenges, and unlock endless possibilities with our
+        comprehensive courses.
+      </p>
 
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="grid grid-cols-1 sm:grid-cols-2 gap-4"
-          >
-            {features.map((feature, index) => (
-              <motion.a
-                key={feature.title}
-                href={feature.link}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3, delay: 0.1 * index }}
-                className="p-4 rounded-lg border border-gray-800 bg-gray-900/50 hover:bg-gray-800/50 transition-colors group"
-              >
-                <h3 className="font-semibold text-gray-200 group-hover:text-white transition-colors text-center">{feature.title}</h3>
-              </motion.a>
-            ))}
-          </motion.div>
-        </div>
+      {/* Centered Buttons on Mobile */}
+      <div className="flex flex-wrap justify-center sm:justify-start gap-4">
+        <Button size="lg" className="bg-blue-600 hover:bg-blue-700 font-semibold text-white">
+          View Courses
+        </Button>
+        <Button size="lg" variant="outline" className="gap-2 font-semibold">
+          <Play className="h-4 w-4" /> Watch Preview
+        </Button>
       </div>
+
+      {/* Student Avatars */}
+      <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
+        <div className="flex -space-x-2">
+          <img className="w-8 h-8 rounded-full border-2 border-black bg-gray-800" src="https://i.ibb.co/v89PpP8/3.jpg" alt="Profile"/>
+          <img className="w-8 h-8 rounded-full border-2 border-black bg-gray-800" src="https://i.ibb.co/7J2W5bgk/2.jpg" alt="Profile"/>
+          <img className="w-8 h-8 rounded-full border-2 border-black bg-gray-800" src="https://i.ibb.co/SX41sMRj/1.jpg" alt="Profile"/>
+        </div>
+        <p className="text-gray-400 text-sm sm:text-base">
+          <span className="font-semibold text-white">1K +</span> Students Already Learning
+        </p>
+      </div>
+    </motion.div>
+
+    {/* Feature Grid - Centered on Mobile */}
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5, delay: 0.2 }}
+      className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-center"
+    >
+      {features.map((feature, index) => (
+        <motion.a
+          key={feature.title}
+          href={feature.link}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, delay: 0.1 * index }}
+          className="p-4 rounded-lg border border-gray-800 bg-gray-900/50 hover:bg-gray-800/50 transition-colors group"
+        >
+          <h3 className="font-semibold text-gray-200 group-hover:text-white transition-colors">
+            {feature.title}
+          </h3>
+        </motion.a>
+      ))}
+    </motion.div>
+  </div>
+</div>
     </div>
   )
 }
