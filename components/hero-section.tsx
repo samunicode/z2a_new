@@ -52,9 +52,8 @@ export default function HeroSection() {
                 Notify Me
               </Button>
             </div>
-{/*             <div className="hidden lg:block"> */}
-            <div>
-{/*               <div className="w-40 h-40 bg-red-950/30 rounded-lg border border-red-900/20 flex items-center justify-center p-4">
+            <div className="w-full">
+              <div className="w-40 h-40 bg-red-950/30 rounded-lg border border-red-900/20 flex items-center justify-center p-4">
                 <Image
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/herologo-BZxigAVdE7xCTgwWG022jTBVPTAJmI.png"
                   alt="Z2A Logo"
@@ -62,19 +61,7 @@ export default function HeroSection() {
                   height={200}
                   className="w-full h-auto"
                 />
-              </div> */}
-
-              <div className="w-40 h-40 sm:w-full sm:max-w-xs sm:mx-auto aspect-square bg-red-950/30 rounded-lg border border-red-900/20 flex items-center justify-center p-4">
-  <Image
-    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/herologo-BZxigAVdE7xCTgwWG022jTBVPTAJmI.png"
-    alt="Z2A Logo"
-    width={200}
-    height={200}
-    className="w-full h-auto"
-  />
-</div>
-
-              
+              </div>
             </div>
           </div>
         </div>
