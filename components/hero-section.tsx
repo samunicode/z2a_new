@@ -98,17 +98,17 @@ export default function HeroSection() {
             transition={{ duration: 0.5 }}
             className="space-y-6"
           >
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight sm:justify-center">
               Master Python from{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
                 Zero to Advance
               </span>
             </h1>
-            <p className="text-gray-400 text-base sm:text-lg max-w-xl font-semibold">
+            <p className="text-gray-400 text-base sm:text-lg max-w-xl font-semibold sm:justify-center">
               Elevate your programming skills, solve real-world challenges, and unlock endless possibilities with our
               comprehensive courses.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 sm:justify-center">
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700 font-semibold text-white" onClick={() => setIsOpen(true)}>
                 View Courses
               </Button>
@@ -116,7 +116,7 @@ export default function HeroSection() {
                 <Play className="h-4 w-4" /> Watch Preview
               </Button>
             </div>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center sm:justify-center gap-4">
               <div className="flex -space-x-2">
                 <div className="w-8 h-8 rounded-full border-2 border-black bg-gray-800">
                   <img className="w-8 h-8 rounded-full" src="https://media.licdn.com/dms/image/v2/D5635AQEomy39uUfI5g/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1736708982885?e=1740643200&amp;v=beta&amp;t=2ho-7RmqFZWViNB0dTz21VI382T_bknrgtEIl8ZstLs" alt="Profile"/>
@@ -152,7 +152,7 @@ export default function HeroSection() {
                 transition={{ duration: 0.3, delay: 0.1 * index }}
                 className="p-4 rounded-lg border border-gray-800 bg-gray-900/50 hover:bg-gray-800/50 transition-colors group"
               >
-                <h3 className="font-semibold text-gray-200 group-hover:text-white transition-colors">{feature.title}</h3>
+                <h3 className="text-center font-semibold text-gray-200 group-hover:text-white transition-colors">{feature.title}</h3>
               </motion.a>
             ))}
           </motion.div>
