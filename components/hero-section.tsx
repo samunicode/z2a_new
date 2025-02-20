@@ -94,6 +94,15 @@ export default function HeroSection() {
                 <div className="w-8 h-8 rounded-full border-2 border-black bg-gray-800">
                   <img className="w-8 h-8 rounded-full" src="https://media.licdn.com/dms/image/v2/D5635AQEomy39uUfI5g/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1736708982885?e=1740643200&amp;v=beta&amp;t=2ho-7RmqFZWViNB0dTz21VI382T_bknrgtEIl8ZstLs" alt="Profile"/>
                 </div>
+                <div className="w-8 h-8 rounded-full border-2 border-black bg-gray-800">
+                  <img className="w-8 h-8 rounded-full" src="https://i.ibb.co/v89PpP8/3.jpg" alt="Profile"/>
+                </div>
+                <div className="w-8 h-8 rounded-full border-2 border-black bg-gray-800">
+                  <img className="w-8 h-8 rounded-full" src="https://i.ibb.co/7J2W5bgk/2.jpg" alt="Profile"/>
+                </div>
+                <div className="w-8 h-8 rounded-full border-2 border-black bg-gray-800">
+                  <img className="w-8 h-8 rounded-full" src="https://i.ibb.co/SX41sMRj/1.jpg" alt="Profile"/>
+                </div>
               </div>
               <p className="text-gray-400 text-sm sm:text-base">
                 <span className="font-semibold text-white">1K +</span> Students Already Learning
