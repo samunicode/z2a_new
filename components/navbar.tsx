@@ -22,7 +22,7 @@ export default function Navbar() {
       onClick={(e) => e.stopPropagation()}
     >
       <span
-        className="absolute top-2 right-2 cursor-pointer text-md font-medium text-red-500 hover:text-red-600 transition"
+        className="absolute top-20 right-2 cursor-pointer text-md font-medium text-red-500 hover:text-red-600 transition"
         onClick={() => setIsOpen(false)}
       >
         ×
