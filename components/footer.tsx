@@ -79,7 +79,7 @@ export default function Footer() {
             </ul>
           </div>
           <div className="space-y-4">
-            <h3 className="text-sm font-medium">Connect</h3>
+            <h3 className="text-sm font-medium sm:text-left text-center">Connect</h3>
             <div className="flex space-x-4">
               <Link href="#" className="text-muted-foreground transition-colors hover:text-primary"
                 onClick={(e) => {e.preventDefault(); // Prevent default link behavior
