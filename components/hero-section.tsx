@@ -46,7 +46,7 @@ export default function HeroSection() {
                 Get ready for our most comprehensive Python learning experience yet. Master Python from basics to
                 advanced concepts.
               </p>
-              <Button className="bg-red-600 hover:bg-red-700 text-white font-medium">
+              <Button className="bg-red-600 hover:bg-red-700 text-white font-medium" onClick={() => setIsOpen(true)}>
                 <Bell className="mr-2 h-4 w-4" />
                 Notify Me
               </Button>
@@ -74,7 +74,7 @@ export default function HeroSection() {
     onClick={() => setIsOpen(false)}
   >
     <div
-      className="bg-black text-white p-6 rounded-lg shadow-lg relative w-96" // Black modal, white text, and fixed width
+      className="bg-black text-white p-6 rounded-lg shadow-lg relative w-96 border border-red-600" // Black modal, white text, and fixed width
       onClick={(e) => e.stopPropagation()}
     >
       <span
@@ -108,7 +108,7 @@ export default function HeroSection() {
               comprehensive courses.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 font-medium text-white">
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 font-medium text-white" onClick={() => setIsOpen(true)}>
                 View Courses
               </Button>
               <Button size="lg" variant="outline" className="gap-2 font-medium" onClick={() => setIsOpen(true)}>
