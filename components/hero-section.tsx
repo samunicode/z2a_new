@@ -91,9 +91,7 @@ export default function HeroSection() {
             </div>
             <div className="flex items-center gap-4">
               <div className="flex -space-x-2">
-                {[...Array(5)].map((_, i) => (
-                  <div key={i} className="w-8 h-8 rounded-full border-2 border-black bg-gray-800" />
-                ))}
+                <div class="w-8 h-8 rounded-full border-2 border-black bg-gray-800"><img class="w-8 h-8 rounded-full border-2 border-black" src="https://media.licdn.com/dms/image/v2/D5635AQEomy39uUfI5g/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1736708982885?e=1740643200&amp;v=beta&amp;t=2ho-7RmqFZWViNB0dTz21VI382T_bknrgtEIl8ZstLs"></div>
               </div>
               <p className="text-gray-400 text-sm sm:text-base">
                 <span className="font-semibold text-white">1,000+</span> Students Already Enrolled
