@@ -15,23 +15,23 @@ export default function MobileNav() {
       </Button>
 
       {isOpen && (
-        <div className="fixed inset-0 top-[64px] z-50 backdrop-blur-sm">
+        <div className="fixed inset-0 top-[64px] z-50 bg-black/50 backdrop-blur-lg">
           <nav className="container px-4 py-6 flex flex-col space-y-4">
             <Link href="#courses" className="text-lg font-medium hover:text-primary" onClick={() => setIsOpen(false)}>
-              Courses
+              Courses (Launching Soon!)
             </Link>
             <Link href="#explore" className="text-lg font-medium hover:text-primary" onClick={() => setIsOpen(false)}>
-              Explore
+              Explore (Launching Soon!)
             </Link>
             <Link href="#contact" className="text-lg font-medium hover:text-primary" onClick={() => setIsOpen(false)}>
-              Contact
+              Contact (Launching Soon!)
             </Link>
             <Link href="#articles" className="text-lg font-medium hover:text-primary" onClick={() => setIsOpen(false)}>
-              Articles
+              Articles (Launching Soon!)
             </Link>
             <Link href="#tutorials" className="text-lg font-medium hover:text-primary" onClick={() => setIsOpen(false)}>
-              Tutorials
-            </Link>
+              Tutorials (Launching Soon!)
+            </Link> 
           </nav>
         </div>
       )}
