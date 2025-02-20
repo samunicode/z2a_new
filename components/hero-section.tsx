@@ -67,26 +67,26 @@ export default function HeroSection() {
 
 
 
-        {/* ✅ Modal Code */}
-        {isOpen && (
-          <div
-            className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
-            onClick={() => setIsOpen(false)}
-          >
-            <div
-              className="bg-white p-6 rounded-lg shadow-lg relative"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <span
-                className="absolute top-2 right-2 cursor-pointer text-xl"
-                onClick={() => setIsOpen(false)}
-              >
-                ×
-              </span>
-              <h1 className="text-xl font-bold">Hello, I am a modal!</h1>
-            </div>
-          </div>
-        )}
+        {/* ✅ Improved Modal Code */}
+{isOpen && (
+  <div
+    className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
+    onClick={() => setIsOpen(false)}
+  >
+    <div
+      className="bg-black text-white p-6 rounded-lg shadow-lg relative w-96" // Black modal, white text, and fixed width
+      onClick={(e) => e.stopPropagation()}
+    >
+      <span
+        className="absolute top-2 right-2 cursor-pointer text-md font-medium text-red-500 hover:text-red-600 transition"
+        onClick={() => setIsOpen(false)}
+      >
+        ×
+      </span>
+      <h1 className="text-md font-medium">Launching Soon! Stay Tuned</h1>
+    </div>
+  </div>
+)}
 
         
         {/* Main Hero */}
