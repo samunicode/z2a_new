@@ -19,7 +19,7 @@ export default function CTA() {
           />
           <a 
       href="mailto:yt.z2a.dev@gmail.com?subject=Hello&body=I want to subscribe to the daily newsletter?"
-      className="bg-white text-black hover:bg-gray-200 flex items-center px-4 py-2 rounded"
+      className="bg-white text-black hover:bg-gray-200 flex items-center px-4 py-2 rounded justify-center sm:justify-start"
     >
       <Mail className="mr-2 h-4 w-4" />
       Subscribe
