@@ -47,8 +47,8 @@ export default function HeroSection() {
                 advanced concepts.
               </p>
               <div className="flex flex-wrap justify-center sm:justify-start gap-4">
-              <Button className="bg-red-600 hover:bg-red-700 text-white font-semibold" onClick={() => setIsOpen(true)}>
-                <Bell className="mr-2 h-4 sm:w-4 w-full" />
+              <Button className="bg-red-600 hover:bg-red-700 text-white font-semibold w-full sm:w-auto" onClick={() => setIsOpen(true)}>
+                <Bell className="mr-2 h-4 w-4" />
                 Notify Me
               </Button>
               </div>
@@ -118,7 +118,7 @@ export default function HeroSection() {
                 <Play className="h-4 w-4" /> Watch Preview
               </Button>
             </div>
-            <div className="flex flex-col sm:flex-row items-center justify-center sm:items-start gap-4">
+            <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
               <div className="flex -space-x-2">
                 <div className="w-8 h-8 rounded-full border-2 border-black bg-gray-800">
                   <img className="w-8 h-8 rounded-full" src="https://media.licdn.com/dms/image/v2/D5635AQEomy39uUfI5g/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1736708982885?e=1740643200&amp;v=beta&amp;t=2ho-7RmqFZWViNB0dTz21VI382T_bknrgtEIl8ZstLs" alt="Profile"/>
