@@ -11,6 +11,15 @@ module.exports = {
       },
     },
     extend: {
+      keyframes: {
+        slowFloat: {
+          '0%, 100%': { transform: 'translateY(5px)' },
+          '50%': { transform: 'translateY(-5px)' },
+        },
+      },
+      animation: {
+        slowFloat: 'slowFloat 5s ease-in-out infinite',
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
