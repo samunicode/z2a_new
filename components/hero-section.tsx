@@ -155,8 +155,8 @@ export default function HeroSection() {
       className="relative flex items-center justify-center w-full h-20"
     >
       {/* Outer Glow Effect */}
-      <div className="animated-border-box-glow"></div>
-      <div className="animated-border-box"></div>
+      <div className={styles.animatedBorderBoxGlow}></div>
+      <div className={styles.animatedBorderBox}></div>
 
       {/* Feature Box */}
       <div className="relative z-10 p-4 rounded-lg border border-gray-800 bg-gray-900/50 hover:bg-gray-800/50 transition-colors group w-full text-center">
