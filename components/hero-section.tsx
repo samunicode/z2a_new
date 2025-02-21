@@ -140,24 +140,34 @@ export default function HeroSection() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="grid grid-cols-1 sm:grid-cols-2 gap-4"
-          >
-            {features.map((feature, index) => (
-              <motion.a
-                key={feature.title}
-                href={feature.link}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3, delay: 0.1 * index }}
-                className="p-4 rounded-lg border border-gray-800 bg-gray-900/50 hover:bg-gray-800/50 transition-colors group"
-              >
-                <h3 className="font-semibold text-gray-200 group-hover:text-white transition-colors text-center">{feature.title}</h3>
-              </motion.a>
-            ))}
-          </motion.div>
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ duration: 0.5, delay: 0.2 }}
+  className="grid grid-cols-1 sm:grid-cols-2 gap-4"
+>
+  {features.map((feature, index) => (
+    <motion.a
+      key={feature.title}
+      href={feature.link}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.3, delay: 0.1 * index }}
+      className="relative flex items-center justify-center w-full h-20"
+    >
+      {/* Outer Glow Effect */}
+      <div className="animated-border-box-glow"></div>
+      <div className="animated-border-box"></div>
+
+      {/* Feature Box */}
+      <div className="relative z-10 p-4 rounded-lg border border-gray-800 bg-gray-900/50 hover:bg-gray-800/50 transition-colors group w-full text-center">
+        <h3 className="font-semibold text-gray-200 group-hover:text-white transition-colors">
+          {feature.title}
+        </h3>
+      </div>
+    </motion.a>
+  ))}
+</motion.div>
+
         </div>
       </div>
     </div>
