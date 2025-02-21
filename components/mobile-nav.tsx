@@ -100,8 +100,7 @@ export default function MobileNav() {
             </div>
             <div className="w-full px-6">
               <Button className="w-full bg-blue-600 hover:bg-blue-700" size="lg" onClick={() => setIsOpen(false)}>
-                Login
-              </Button>
+              <Button className="w-full bg-red-600 text-white font-medium" size="lg" onClick={() => setIsOpen(false)}>Python DSA Roadmap</Button>
             </div>
           </nav>
         </div>
