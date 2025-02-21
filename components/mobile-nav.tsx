@@ -85,7 +85,7 @@ export default function MobileNav() {
             </Button>
           </div>
 
-          <nav className="flex flex-col items-center justify-between h-[calc(100vh-64px)] py-8 bg-black/70 backdrop-blur-md">
+          <nav className="flex flex-col items-center justify-between h-[calc(100vh-64px)] py-8 bg-black">
             <div className="w-full">
               {menuItems.map((item) => (
                 <Link
