@@ -32,32 +32,16 @@ export default function Features() {
         Unveil the essence of z2a.dev: a community-driven platform dedicated to empowering coders of all levels. Discover who we are and how we're shaping the future of coding education.
         </p>
       </div>
-{/*       <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-2">
-        {features.map((feature) => (
-          <div key={feature.name} className="relative overflow-hidden rounded-lg border bg-background p-8">
-            <div className="flex flex-wrap justify-center sm:justify-start items-center gap-4">
-              <feature.icon className="h-8 w-8" />
-              <h3 className="font-bold">{feature.name}</h3>
-            </div>
-            <p className="mt-2 text-muted-foreground sm:text-left text-center">{feature.description}</p>
-          </div> */}
        <div className="mx-auto grid max-w-5xl grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-
         {features.map((feature, index) => (
-
           <div key={index} className="group relative inline-flex overflow-hidden rounded-lg p-[1px]">
-
             <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-
             <div className="relative flex h-full w-full flex-col gap-4 rounded-lg bg-[#080708] p-6">
-
               <div>{feature.icon}</div>
-
               <h3 className="text-xl font-semibold">{feature.title}</h3>
-
               <p className="text-gray-400">{feature.description}</p>
-
             </div>
+          </div>
         ))}
       </div>
     </section>
