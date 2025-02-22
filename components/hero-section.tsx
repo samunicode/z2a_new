@@ -145,16 +145,20 @@ export default function HeroSection() {
             className="grid grid-cols-1 sm:grid-cols-2 gap-4"
           >
             {features.map((feature, index) => (
-              <motion.a
+              <motion.div
                 key={feature.title}
-                href={feature.link}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3, delay: 0.1 * index }}
-                className="p-4 rounded-lg border border-gray-800 bg-gray-900/50 hover:bg-gray-800/50 transition-colors group"
+                className="group relative inline-flex overflow-hidden rounded-lg p-[1px]"
               >
-                <h3 className="font-semibold text-gray-200 group-hover:text-white transition-colors text-center">{feature.title}</h3>
-              </motion.a>
+                <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+                <a href={feature.link} className="relative flex h-full w-full rounded-lg bg-[#080708] p-4">
+                  <h3 className="font-medium text-gray-200 group-hover:text-white transition-colors">
+                    {feature.title}
+                  </h3>
+                </a>
+              </motion.div>
             ))}
           </motion.div>
         </div>
