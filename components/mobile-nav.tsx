@@ -22,8 +22,21 @@ export default function MobileNav() {
   const [isOpen, setIsOpen] = useState(false)
   return (
     <div className="lg:hidden">
-      <Button variant="ghost" size="icon" onClick={() => setIsOpen(!isOpen)} className="lg:hidden">
-        {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+      <Button
+        variant="ghost"
+        size="icon"
+        onClick={() => setIsOpen(!isOpen)}
+        className="lg:hidden relative w-10 h-10 flex items-center justify-center"
+      >
+        {isOpen ? (
+          <X className="h-9 w-9" />
+        ) : (
+          <div className="flex flex-col gap-1.5">
+            <div className="w-6 h-0.5 bg-white" />
+            <div className="w-5 h-0.5 bg-white ml-1" />
+            <div className="w-4 h-0.5 bg-white ml-2" />
+          </div>
+        )}
       </Button>
 
       {isOpen && (
