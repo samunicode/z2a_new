@@ -37,7 +37,7 @@ export default function Features() {
       <div className="mx-auto grid max-w-5xl grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {features.map((feature, index) => (
           <div key={index} className="group relative inline-flex overflow-hidden rounded-lg p-[1px]">
-            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+            <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#A07CFE_0%,#FE8FB5_50%,#FFBE7B_100%)]" />
             <div className="relative flex h-full w-full flex-col gap-4 rounded-lg bg-[#080708] p-6">
               <div>{feature.icon}</div>
               <h3 className="text-xl font-semibold">{feature.title}</h3>
