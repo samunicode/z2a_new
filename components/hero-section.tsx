@@ -33,7 +33,8 @@ export default function HeroSection() {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 pt-32">
         {/* Announcement Banner */}
-        <div className="max-w-4xl mx-auto mb-16 p-6 rounded-lg bg-gradient-to-r from-red-950/80 to-red-950/10 border border-red-900/90 text-center sm:text-left">
+        <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[linear-gradient(to_right,rgba(127,29,29,0.9),transparent)]" />
+        <div className="relative max-w-4xl mx-auto mb-16 p-6 rounded-lg bg-gradient-to-r from-red-950/80 to-red-950/10 text-center sm:text-left">
           <div className="flex flex-col sm:flex-row items-center sm:items-start justify-between gap-8">
             <div className="space-y-4">
               <span className="inline-block px-3 py-1 text-sm text-red-400 bg-red-950/80 rounded-full font-semibold border border-red-600">Stay Tuned</span>
